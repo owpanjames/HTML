@@ -1,0 +1,58 @@
+*{
+	margin:0px;
+}
+/*處理body*/
+.outframe{
+	border:2px solid black;
+	width:900px;
+	margin:auto;
+	
+	
+}
+/*處理整篇文章的外框*/
+#table2{
+			border:3px solid;
+			border-collapse:collapse;
+}
+/*處裡圖片跟文字區塊*/
+thead{
+	background-color:#66B3FF;
+}
+/*處理表格標題的部分*/
+td,th{
+		border:2px solid;
+}
+/*處理表格內容框線設定*/
+#table1{
+			text-align:center;
+			border:3px solid;
+			border-collapse:collapse;
+}
+/*處理整份表格的框線設定*/
+#table3{
+			text-align:center;
+			border:3px solid;
+			border-collapse:collapse;
+}
+.textcenter{
+	text-align:center;
+}
+/*處理這文字置中*/
+.floatleft{
+	float:left
+}
+/*處裡漂浮*/
+.floatclear{
+	clear:both;
+}
+/*處裡關閉漂浮*/
+p,li,dd,td,a,dt,h1{
+	font-family:chinese;
+	text-indent:10px;
+	line-height:32px;
+	font-size:24px;
+}
+/*處理所有文章的形式*/
+a:hover{
+	font-size:50px;
+}
