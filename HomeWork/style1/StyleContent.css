@@ -4,7 +4,7 @@
 /*處理body*/
 .outframe{
 	border:2px solid black;
-	width:900px;
+	width:auto;
 	margin:auto;
 	
 	
@@ -34,6 +34,7 @@ td,th{
 			border:3px solid;
 			border-collapse:collapse;
 }
+/*給partion的table設定*/
 .textcenter{
 	text-align:center;
 }
@@ -55,4 +56,18 @@ p,li,dd,td,a,dt,h1{
 /*處理所有文章的形式*/
 a:hover{
 	font-size:50px;
+}
+/*處理滑鼠移動*/
+#outbox{
+	-moz-column-width:auto;
+	-moz-column-count:2;
+	-moz-column-rule:2px solid red;
+	-moz-column-gap:2em;
+	-webkit-column-width:auto;
+	-webkit-column-count: 2;
+	-webkit-column-rule: 2px solid red;
+	column-width:auto;
+	column-count:2;
+	column-rule:2px solid red;
+	column-gap:2em;
 }
