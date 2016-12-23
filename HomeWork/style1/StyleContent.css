@@ -4,10 +4,8 @@
 /*處理body*/
 .outframe{
 	border:2px solid black;
-	width:auto;
-	margin:auto;
-	
-	
+	width:600px;
+	margin: auto;
 }
 /*處理整篇文章的外框*/
 #table2{
@@ -58,7 +56,7 @@ a:hover{
 	font-size:50px;
 }
 /*處理滑鼠移動*/
-#outbox{
+/*#outbox{
 	-moz-column-width:auto;
 	-moz-column-count:2;
 	-moz-column-rule:2px solid red;
@@ -70,4 +68,5 @@ a:hover{
 	column-count:2;
 	column-rule:2px solid red;
 	column-gap:2em;
-}
+}*/
+/*配置partion*/
