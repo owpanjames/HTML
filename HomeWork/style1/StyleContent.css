@@ -56,6 +56,15 @@ a:hover{
 	font-size:50px;
 }
 /*處理滑鼠移動*/
+#head{
+		background-color: #C6A300;
+		transition-property:background-color;
+		transition-duration:2s;
+}
+#head:hover{
+				background-color:#00ff99;
+}
+/*標題部分的動畫變色*/
 /*#outbox{
 	-moz-column-width:auto;
 	-moz-column-count:2;
