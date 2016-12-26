@@ -1,0 +1,89 @@
+#allpage {
+	width: 1000px;
+	margin: auto;
+}
+body {
+	font-size: 75%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+#menu {
+	width: 100%;
+	list-style-type: none;
+	overflow: auto;
+	background-color: #66b3ff;
+	border-bottom: 3px solid #cccccc;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#menu li {
+	/*針對li做修改*/
+	width:11em;
+	float: left;
+	border-right: 1px solid #cccccc;
+}
+#menu li a {
+	/*針對li裡面的超連結做修改*/
+	display: block;
+	/*顯示為一個區塊*/
+	text-align: center;
+	/*只有用成block才可以用水平置中*/
+	text-decoration: none;
+	/*去除底線*/
+	width: 100%;
+	/*調整寬度跟整個display一樣大*/
+	background-color: #66b3ff;
+	line-height: 2.5em;
+	/*上下間格寬度*/
+}
+#menu li a:hover {
+	color: #ffffff;
+	background-color: #0080FF;
+}
+#content {
+	width: 100%;
+	overflow:auto;
+}
+article {
+	width: 780px;
+	float: left;
+}
+aside {
+	width: 200px;
+	float: right;
+}
+
+.title {
+	background-color: #0066cc;
+	line-height: 2.5em;
+	padding-left :20px;
+	color: #ffffff;
+}
+article section h2 {
+	font-size: 125%;
+}
+article section {
+	margin: 16px;
+}
+article section p {
+	margin: 10px 0;
+}
+#sel li {
+	list-style: decimal inside;
+}
+aside dl {
+	margin: 16px;
+}
+footer {
+	width: 100%;
+	background-color: #66b3ff;
+	line-height: 2.5em;
+	text-align: center;
+	color: #FFFFFF;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}

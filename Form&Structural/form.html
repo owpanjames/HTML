@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="utf-8" />
+		<title>表單</title>
+		
+		<style>/*css write here*/
+			.t1{
+				width:500px;
+				border-bottom:1px solid #00A600;
+				margin:20px;
+				padding-bottom:10px;
+			}
+			.sub{
+				width: 450px;
+				margin:20px;
+				text-align:center;
+			}
+			.s1{
+				width:110px;
+				float:left;
+				text-align:right;
+				padding-right:3px;
+			}
+			legend{
+				text-align:center;
+				font-family:"標楷體";
+				font-size:30px;
+			}
+			fieldset{
+				width: 500px;
+				border:1px solid #46A3FF;
+				border-radius:15px;
+				margin:15px;
+				
+			}
+		</style>
+		<script>
+			//Javascript code
+		</script>
+	</head>
+	<body>
+		<form action="#" method="get" enctype="multipart/form-data">
+			<fieldset>
+				<legend>個人資料一<em>(必填)</em></legend>
+				<div class="t1">
+				<label for="account1" class="s1">姓名:</label>
+				<input type="text" size="10" name="account" id="account1" autocomplete="off" placeholder="guest" required="required" autofocus/>
+			</div>
+			<div class="t1">
+				<label class="s1">性別:</label>
+					<input type="radio" name="gender" value="male" id="male1"/><label for="male1">男</label>
+					<input type="radio" name="gender" value="female" id="female1"/><label for="female1">女</label>
+			</div>
+			<div class="t1">
+				<label for="password1" class="s1">密碼:</label>
+				<input type="password" name="pwd" id="password1" />
+			</div>
+			<div class="t1">
+				<label class="s1">身分證字號:</label>
+				<input type="text" pattern="[a-zA-Z]{1}[1-2]{1}\d{8}" maxlength="10"/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>地址<em>(必填)</em></legend>
+				<div class="t1">
+					<label class="s1" for="post1">郵遞區號:</label>
+						<input type="text" name="postnumber" id="post1" />
+				</div>
+					<div class="t1">
+						<label class="s1">縣市:</label>
+							<select name="add1">
+								<option value="TPE" selected>台北市</option>
+								<option value="TPH">新北市</option>
+								<option value="TYC">桃園市</option>
+								<option value="HSC">新竹市</option>
+							</select>
+					</div>
+					<div class="t1">
+						<label class="s1">完整地址:</label>
+						<input type="text" name="add2" autocomplete="on"/>
+					</div>
+					
+			</fieldset>
+			<fieldset>
+				<legend>個人資料二</legend>
+				<div class="t1">
+					<label class="s1">興趣:</label>
+					<input type="checkbox" name="hobby" value="music" id="music1" /><label for="music1">音樂</label>
+					<input type="checkbox" name="hobby" value="sport" id="sport1" /><label for="sport1">運動</label>
+					<input type="checkbox" name="hobby" value="movie" id="movie1" /><label for="movie1">電影</label>
+					<input type="checkbox" name="hobby" value="read" id="read1" /><label for="read1">閱讀</label>
+					<input type="checkbox" name="hobby" value="sleep1" id="sleep1" /><label for="sleep1">睡覺</label>
+				</div>
+				<div class="t1">
+					<label class="s1">照片:</label>
+					<input type="file" name="file1" multiple/>
+				</div>
+				<div class="t1">
+					<label class="s1">Blog:</label>
+					<input type="url" name="httpurl" list="hpurl"/>
+					<datalist id="hpurl">
+						<option value="https://www.google.com.tw">google</option>
+						<option value="https://www.pchome.com.tw">pchome</option>
+						<option value="https://tw.yahoo.com">yahoo</option>
+					</datalist>
+				</div>
+				<div class="t1">
+				<label for="memo1" class="s1">意見:</label>
+				<textarea cols="40" rows="10"name"memo" id="memo1"></textarea>
+				</div>
+			<div class="sub" >
+				<input type="submit" value="送出" />
+				<input type="reset" value="清除" />
+			</div>
+			</fieldset>
+		</form>
+		<hr />
+		<fieldset>
+		<legend>其他</legend>
+		<div class="t1">
+			<label class="s1" for="birth1">生日:</label>
+			<input type="date" name="birth" id="birth1" />		
+		</div>
+		<div  class="t1">
+			<label class="s1" for="month1">月份:</label>
+			<input type="month" name="month1" />
+		</div>
+		<div  class="t1">
+			<label class="s1" for="time1">時間:</label>
+			<input type="time" name="time1" />
+		</div>
+		<div  class="t1">
+			<label class="s1" for="email1">Email:</label>
+			<input type="email" name="email" id="email1" />
+		</div>
+		<div  class="t1">
+			<label class="s1" for="search1">搜尋:</label>
+			<input type="search" name="serach" id="search1"  />
+		</div>
+		<div  class="t1">
+			<label class="s1" for="col1">顏色:</label>
+			<input type="color" name="col1" />
+		</div>
+		<div  class="t1">
+			<label class="s1">範圍:</label>
+			<input type="range" name="rag1" min="-10" max="40"step="5"/>
+		</div>
+		<div  class="t1">
+			<label class="s1">數字:</label>
+			<input type="number" name="num1" min="-10" max="40"step="5"/>
+		</div>
+		<div  class="t1">
+		</div>
+		</fieldset>
+	</body>
+</html>

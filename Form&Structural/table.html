@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="utf-8" />
+		<title>表格練習</title>
+		
+		<style>/*css write here*/
+			#table1 {
+				width:400px;
+				border:3px solid #0080FF;
+				border-collapse:collapse;
+			}
+			td,th {
+				border:1px solid #9393FF;
+			}
+			thead {
+				background-color:#46a3ff;
+				border-bottom:3px double #004B97;
+				color:#ffffff;
+				text-transform:uppercase;
+			}
+			tbody {
+				background-color:#ACD6FF;
+				text-align:center;
+			}
+			tbody tr:nth-child(2n) {
+				background-color:#acd6ff;
+			}
+			tbody tr:nth-child(2n+1) {
+				background-color:#d2e9ff;
+			}
+			 td:hover {
+				background-color:#ffffff;
+			}
+			tbody td:hover {
+				color:	#00A600;
+			}
+		</style>
+		<script>
+			//Javascript code
+		</script>
+	</head>
+	<body>
+		<table id="table1">
+			<caption><h2>表格練習</h2></caption>
+			<thead>			
+			<tr>
+				<th>a</th>
+				<th>b</th>
+				<th>c</th>
+				<th>d</th>
+			</tr>
+			<tr>
+				<th colspan="2">a</th>
+				
+				<th colspan="2">c</th>
+				
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td colspan="3">2</td>
+				
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td rowspan="3">3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
